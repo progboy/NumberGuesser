@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Number Guesser</string>
+    <string name="title">Number Guesser</string>
+    <string name="start">Start</string>
+    <string name="about">About</string>
+    <string name="back">Back</string>
+    <string name="about_description">Created by Ahmad Manzar Rizvi\nGuess a number from 1 to 100 within 10 tries.\nYou win if you guess it within 10 tries. You lose\nif you run out of tries.\n\nGDSC App Development Submission</string>
+    <string name="instruction">Guess a number from 1 to 100</string>
+    <string name="tries_left">Tries left: 10</string>
+    <string name="guess"></string>
+    <string name="btGuess">guess</string>
+</resources>
