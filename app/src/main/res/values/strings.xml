@@ -9,4 +9,8 @@
     <string name="tries_left">Tries left: 10</string>
     <string name="guess"></string>
     <string name="btGuess">guess</string>
+    <string name="diff_title">Select Difficulty</string>
+    <string name="txt_easy">EASY</string>
+    <string name="txt_hard">HARD</string>
+    <string name="txt_medium">MEDIUM</string>
 </resources>

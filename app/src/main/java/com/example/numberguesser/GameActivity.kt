@@ -1,8 +1,5 @@
 package com.example.numberguesser
 
-import android.content.Intent
-import android.graphics.Color
-import android.graphics.PorterDuff
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -22,13 +19,14 @@ class GameActivity : AppCompatActivity() {
         val tryPrompt:TextView = findViewById(R.id.tries)  //shows no of tries left
         val response:TextView = findViewById(R.id.txt_response) //shows whether input is correct or not
         var tries = 10 //no of tries
-        val ans = (1..100).random()  //choose the answer
+        val ans = DifficultyChanger.ans  //choose the answer
+        findViewById<TextView>(R.id.textView3).text = DifficultyChanger.dText
 
         //runs when user clicks button
         guessButton.setOnClickListener {
             guessButton.isClickable = false
             try {
-                var s = guess.text.toString().trim().toInt()
+                val s = guess.text.toString().trim().toInt()
                 tries--
                 if (s == ans) {
                     //game won
@@ -66,11 +64,18 @@ class GameActivity : AppCompatActivity() {
         menuTime()
     }
     private fun menuTime(){
-        val bt_back:Button = findViewById(R.id.menu)
-        bt_back.isClickable = true
-        bt_back.alpha = 1f
-        bt_back.setOnClickListener{
+        val btBack:Button = findViewById(R.id.menu)
+        btBack.isClickable = true
+        btBack.alpha = 1f
+        btBack.setOnClickListener{
             finish()
         }
+    }
+}
+class DifficultyChanger(){
+    companion object{
+        //work in progress
+        var dText:String = "Guess a number from 1 to 100"
+        var ans:Int = (1..100).random()
     }
 }

@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         }
         val gameButton:Button = findViewById(R.id.bt_start)
         gameButton.setOnClickListener{
-            val intent = Intent(this,GameActivity::class.java)
+            val intent = Intent(this,DifficultyActivity::class.java)
             startActivity(intent)
         }
     }
