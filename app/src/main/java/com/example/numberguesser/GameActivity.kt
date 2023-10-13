@@ -27,6 +27,7 @@ class GameActivity : AppCompatActivity() {
             guessButton.isClickable = false
             try {
                 val s = guess.text.toString().trim().toInt()
+                guess.getText().clear()
                 tries--
                 if (s == ans) {
                     //game won

@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 
 
-//need to make easy & hard difficulties work
+
 class DifficultyActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

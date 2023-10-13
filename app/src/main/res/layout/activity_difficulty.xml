@@ -7,6 +7,15 @@
     tools:context=".DifficultyActivity">
 
     <ImageView
+        android:id="@+id/background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sky" />
+
+    <ImageView
         android:id="@+id/img_difficulty"
         android:layout_width="164dp"
         android:layout_height="157dp"
@@ -59,13 +68,13 @@
         android:id="@+id/bt_medium"
         android:layout_width="140dp"
         android:layout_height="55dp"
-        android:layout_marginTop="9dp"
         android:text="@string/txt_medium"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/bt_hard"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bt_easy" />
+        app:layout_constraintTop_toBottomOf="@+id/bt_easy"
+        app:layout_constraintVertical_bias="0.444" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
