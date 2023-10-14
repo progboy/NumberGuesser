@@ -13,4 +13,5 @@
     <string name="txt_easy">EASY</string>
     <string name="txt_hard">HARD</string>
     <string name="txt_medium">MEDIUM</string>
+    <string name="setting1">No Background</string>
 </resources>
